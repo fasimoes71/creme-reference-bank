@@ -1660,8 +1660,8 @@ footer {
 /* Latest and popular */
 .latest-popular {
   padding: 132px var(--page-gutter) 152px;
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--deep);
+  color: var(--cream);
 }
 
 .latest-popular-intro {
@@ -1703,7 +1703,7 @@ footer {
   align-items: baseline;
   justify-content: space-between;
   padding-bottom: 17px;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.42);
 }
 
 .latest-column header h3,
@@ -1729,14 +1729,14 @@ footer {
   gap: clamp(20px, 3vw, 42px);
   align-items: center;
   padding: 28px 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--line-light);
 }
 
 .latest-image {
   overflow: hidden;
   aspect-ratio: 1.45;
   border-radius: 12px;
-  background: var(--cream);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .latest-image img {
@@ -1781,7 +1781,7 @@ footer {
 }
 
 .popular-column li {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--line-light);
 }
 
 .popular-column li a {
@@ -1793,7 +1793,7 @@ footer {
 }
 
 .popular-column li > a > span {
-  color: var(--red);
+  color: var(--yolk);
   font-size: 22px;
   font-weight: 500;
 }
