@@ -1313,78 +1313,9 @@ export default function Home() {
         )}
       </section>
 
-      <section className="territories" id="territorios">
-        <div className="section-heading inverted">
-          <div>
-            <span className="eyebrow">03 — Visual hypotheses</span>
-            <h2>Five directions for CREME</h2>
-          </div>
-          <p>
-            These are not finished identities. They are productive tensions
-            for organizing references and testing decisions.
-          </p>
-          <div className="section-logo-wrap section-logo-orange" aria-hidden="true">
-            <img src="/brand/logo-black.png" alt="" />
-          </div>
-        </div>
-        <div className="territory-grid">
-          {territories.map((territory) => (
-            <article className={territory.className} key={territory.index}>
-              <span>{territory.index}</span>
-              <div className="territory-mark" aria-hidden="true" />
-              <h3>{territory.name}</h3>
-              <p>{territory.copy}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="framework" id="metodo">
-        <div className="section-heading">
-          <div>
-            <span className="eyebrow">04 — Research framework</span>
-            <h2>What to observe</h2>
-          </div>
-          <p>
-            Every new reference should answer a question. These axes keep the
-            library from becoming a collection of disconnected images.
-          </p>
-          <div className="section-logo-wrap section-logo-red-one" aria-hidden="true">
-            <img src="/brand/logo-black.png" alt="" />
-          </div>
-        </div>
-        <div className="axis-list">
-          {researchAxes.map(([number, title, description]) => (
-            <article key={number}>
-              <span>{number}</span>
-              <h3>{title}</h3>
-              <p>{description}</p>
-              <i aria-hidden="true">↗</i>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="principles">
-        <div className="principles-title">
-          <span className="eyebrow">05 — CREME criteria</span>
-          <h2>Save less.<br />Observe better.</h2>
-          <div className="section-logo-wrap section-logo-red-two" aria-hidden="true">
-            <img src="/brand/logo-black.png" alt="" />
-          </div>
-        </div>
-        <ol>
-          <li><span>01</span><p>Which decision can this reference inform?</p></li>
-          <li><span>02</span><p>What is a system, and what is only styling?</p></li>
-          <li><span>03</span><p>How does the idea move across print, digital and space?</p></li>
-          <li><span>04</span><p>What is culturally specific and should not be copied?</p></li>
-          <li><span>05</span><p>What can CREME do in its own way?</p></li>
-        </ol>
-      </section>
-
       <section className="latest-popular" aria-labelledby="latest-popular-title">
         <div className="latest-popular-intro">
-          <span className="eyebrow">06 — Library pulse</span>
+          <span className="eyebrow">03 — Library pulse</span>
           <h2 id="latest-popular-title">Latest &amp; popular</h2>
           <p>Recently added references and recurring touchstones in the CREME research bank.</p>
         </div>
@@ -1422,6 +1353,75 @@ export default function Home() {
             </ol>
           </div>
         </div>
+      </section>
+
+      <section className="territories" id="territorios">
+        <div className="section-heading inverted">
+          <div>
+            <span className="eyebrow">04 — Visual hypotheses</span>
+            <h2>Five directions for CREME</h2>
+          </div>
+          <p>
+            These are not finished identities. They are productive tensions
+            for organizing references and testing decisions.
+          </p>
+          <div className="section-logo-wrap section-logo-orange" aria-hidden="true">
+            <img src="/brand/logo-black.png" alt="" />
+          </div>
+        </div>
+        <div className="territory-grid">
+          {territories.map((territory) => (
+            <article className={territory.className} key={territory.index}>
+              <span>{territory.index}</span>
+              <div className="territory-mark" aria-hidden="true" />
+              <h3>{territory.name}</h3>
+              <p>{territory.copy}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="framework" id="metodo">
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow">05 — Research framework</span>
+            <h2>What to observe</h2>
+          </div>
+          <p>
+            Every new reference should answer a question. These axes keep the
+            library from becoming a collection of disconnected images.
+          </p>
+          <div className="section-logo-wrap section-logo-red-one" aria-hidden="true">
+            <img src="/brand/logo-black.png" alt="" />
+          </div>
+        </div>
+        <div className="axis-list">
+          {researchAxes.map(([number, title, description]) => (
+            <article key={number}>
+              <span>{number}</span>
+              <h3>{title}</h3>
+              <p>{description}</p>
+              <i aria-hidden="true">↗</i>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="principles">
+        <div className="principles-title">
+          <span className="eyebrow">06 — CREME criteria</span>
+          <h2>Save less.<br />Observe better.</h2>
+          <div className="section-logo-wrap section-logo-red-two" aria-hidden="true">
+            <img src="/brand/logo-black.png" alt="" />
+          </div>
+        </div>
+        <ol>
+          <li><span>01</span><p>Which decision can this reference inform?</p></li>
+          <li><span>02</span><p>What is a system, and what is only styling?</p></li>
+          <li><span>03</span><p>How does the idea move across print, digital and space?</p></li>
+          <li><span>04</span><p>What is culturally specific and should not be copied?</p></li>
+          <li><span>05</span><p>What can CREME do in its own way?</p></li>
+        </ol>
       </section>
 
       <footer>
